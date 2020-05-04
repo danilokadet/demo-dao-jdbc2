@@ -60,6 +60,16 @@ public class Program {
 		
 		System.out.println("Inserted New id = " + newSeller.getId());
 		
+		System.out.print("/=== TESTE 4: Seller update seller ===\\");
+		System.out.println("");
+		
+		seller = sellerDao.findById(1);
+		seller.setName("Martha Wainne");
+		sellerDao.update(seller);
+		System.out.print("Update success!");
+		
+		
+		
 	}
 
 }
